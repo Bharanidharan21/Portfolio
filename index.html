@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharani | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-code"></i> Bharani<span>.</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hi, I’m <span>Bharanidharan</span></h1>
+    <p>Aspiring Full Stack Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/PS photo .jpg" alt="Bharani Profile Photo" class="profile-pic">
+      <div class="about-text">
+        <p>Possess strong communication skills and a commitment to continuous learning,
+        with a keen interest in emerging technologies and best practices.</p>
+        <p>Looking for an entry-level software developer position where I can leverage
+        my skills and enthusiasm to contribute to impactful projects and grow as part
+        of a forward-thinking team.</p>
+        <a href="Bharani_resume.pdf" download class="btn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="fade-in">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML / CSS</div>
+    <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+    <div class="skill-card"><i class="fa-brands fa-java"></i> Java</div>
+    <div class="skill-card"><i class="fa-solid fa-leaf"></i> Spring Boot</div>
+    <div class="skill-card"><i class="fa-solid fa-database"></i> MySQL</div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in">
+  <h2>Projects</h2>
+  <div class="project-grid">
+   <div class="project-card">
+    <img src="images/project1.jpg" alt="Invoice Generator">
+    <h3>Invoice Generator Application</h3>
+    <p>Developed with Spring Boot, Java, and MySQL. Features CRUD operations for clients,
+    products, and invoice records with REST APIs.</p>
+    <div class="project-links">
+    <a href="https://github.com/Bharanidharan21" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+    </div>
+   </div>
+  </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+  <h2>Contact Me</h2>
+  <div class="contact-icons">
+    <a href="mailto:bharanidharank1806@gmail.com" target="_blank">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="tel:+917092687713">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/bharanidharan-kalaivanan" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Bharanidharan21" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bharani. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
