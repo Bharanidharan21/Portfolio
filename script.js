@@ -25,6 +25,7 @@ showOnScroll(); // run once on load
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
 });
+
 // Animate sections on page load + scroll
 const sections = document.querySelectorAll("section");
 
@@ -44,3 +45,19 @@ function revealSections() {
 
 window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+// Close navbar when scrolling
+window.addEventListener("scroll", () => {
+  const navLinks = document.getElementById("navLinks");
+  if (navLinks.classList.contains("active")) {
+    navLinks.classList.remove("active");
+  }
+});
